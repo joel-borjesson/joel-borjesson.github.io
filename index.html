@@ -1,9 +1,79 @@
+<!DOCTYPE html>
 <html>
- 
-<body>
-  <h1>MIRFELTON</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
- 
+    <head>
+        <title>CSS selectors and specificity</title>
+        <link href="styles.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <header>
+            <ul class="main-menu">
+                <li><a href="#basic">Basic</a></li>
+                <li><a href="#grouping">Grouping</a></li>
+                <li><a href="#combinators">Combinators</a></li>
+            </ul>
+            <h1>CSS Selectors and Specificity Cheatsheet!</h1>
+        </header>
+        <table>
+            <tr>
+                <th>Type</th>
+                <th>Selector</th>
+                <th>Specificity</th>
+                <th>Syntax</th>
+            </tr>
+            <tr>
+                <td rowspan="5" id="basic">Basic Selectors</td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors"
+                    target="_blank">Universal</a>
+                    </td>
+                <td>top-level, general</td>
+                <td>*</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Type_selectors"
+                target="_blank">Type</a></td>
+                <td>More specific than Universal</td>
+                <td>elementname (i.e. table)</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors"
+                target="_blank">Class</a></td>
+                <td>More specific than Type</td>
+                <td>.classname</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/ID_selectors"
+                target="_blank">ID</a></td>
+                <td>More specific than Class</td>
+                <td>#idname</td>
+            </tr>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors"
+                target="_blank">Attribute</a></td>
+                <td>More specific than ID</td>
+                <td>[attr] [attr=value]</td>
+            </tr>
+            <tr>
+                <td id="grouping">Grouping</td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Selector_list"
+                    target="_blank">Selector list</a></td>
+                <td>Groups selectors</td>
+                <td>A, B</td>
+            </tr>
+            <tr>
+                <td rowspan="2" id="combinators">Combinators</td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Descendant_combinator"
+                    target="_blank">Descendant</a></td>
+                <td>The " " (space) combinator selects nodes that are descendants of the first element</td>
+                <td>A B</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator"
+                    target="_blank">Child</a></td>
+                <td>The > combinator selects nodes that are direct children of the first element</td>
+                <td>A > B</td>
+            </tr>
+        </table>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors"
+        target="_blank">More information</a></p>
+    </body>
 </html>
